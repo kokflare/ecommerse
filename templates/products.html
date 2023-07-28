@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    {% for pro in products %}
+        <div class="product">
+            <div class="name"> {{ pro.name }}
+                <p>{{pro.desc}}</p>
+                <p>{{pro.price}}</p>
+            </div>
+        </div>
+        <a href="{% url 'addtocard' pro.id %}"> Add to card</a>
+    {% endfor %}
+</body>
+</html>

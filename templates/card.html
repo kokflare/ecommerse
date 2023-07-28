@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    {% for i in order %}
+        <div class="card">
+            <div class="name"> {{ i.name }}
+                <p>{{ i.desc }}</p>
+                <p> Total: {{ i.get_total }}</p>
+            </div>
+        </div>
+
+
+    {% endfor %}
+</body>
+</html>
